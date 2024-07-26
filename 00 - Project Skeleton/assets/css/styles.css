@@ -1,0 +1,33 @@
+html {
+
+  --main-color: #292626;
+  --text-color-main: #ded6d6;
+  --text-color-dark: #413d3d;
+
+  * {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+
+body {
+
+  background-color: var(--main-color);
+  color: var(--text-color-main);
+}
+
+.wrapper {
+
+  padding: 0 30px;
+}
+
+.container {
+
+  width: 100%;
+  column-gap: 24px;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}

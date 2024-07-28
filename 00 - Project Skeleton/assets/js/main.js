@@ -1,4 +1,4 @@
 (function () {
 
-  console.log("Progress steps script");
+  console.log("My Project Starter");
 })();

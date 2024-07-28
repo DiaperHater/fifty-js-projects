@@ -26,6 +26,8 @@ body {
 
 .container {
 
+  display: grid;
+  place-items: center;
   width: 100%;
   column-gap: 24px;
   padding-top: 56px;

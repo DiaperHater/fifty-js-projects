@@ -1,0 +1,28 @@
+.box {
+
+  width: 240px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #244d82;
+  border-radius: 12px;
+  margin: 24px auto;
+  transition: transform .4s ease-in;
+}
+
+.box_hidden {
+
+  transform: translateX(-100vw);
+
+  &:nth-of-type(even) {
+
+    transform: translateX(100vw);
+  }
+}
+
+.box__name {
+
+  text-align: center;
+  color: #fff;
+}

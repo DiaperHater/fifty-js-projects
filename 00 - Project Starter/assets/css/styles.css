@@ -19,17 +19,12 @@ body {
   color: var(--text-color-main);
 }
 
-.wrapper {
-
-  padding: 0 30px;
-}
-
 .container {
 
   display: grid;
   place-items: center;
+  height: 100vh;
   width: 100%;
   column-gap: 24px;
-  padding-top: 56px;
-  padding-bottom: 56px;
+  padding: 36px;
 }

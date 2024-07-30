@@ -1,0 +1,21 @@
+html {
+
+  --main-color: #292626;
+  --text-color-main: #ded6d6;
+  --text-color-dark: #413d3d;
+
+  * {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+
+body {
+
+  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--main-color);
+  color: var(--text-color-main);
+}

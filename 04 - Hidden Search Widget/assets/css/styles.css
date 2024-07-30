@@ -15,7 +15,7 @@ html {
 
 body {
 
-  background-color: var(--main-color);
+  background-image: linear-gradient(90deg, #7437d6, #661ddc);
   color: var(--text-color-main);
 }
 
@@ -28,8 +28,54 @@ body {
 
   display: grid;
   place-items: center;
+  min-height: 100vh;
   width: 100%;
   column-gap: 24px;
-  padding-top: 56px;
-  padding-bottom: 56px;
+}
+
+.search-widget {
+
+  position: relative;
+  height: 50px;
+}
+
+.search-widget__input {
+
+  padding: 14px;
+  width: 50px;
+  height: 50px;
+  outline: 0;
+  transition: .3s ease;
+}
+
+.search-widget.active .search-widget__input {
+
+  width: 240px;
+}
+
+.search-widget__btn {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  background: var(--text-color-dark);
+  cursor: pointer;
+  transition: .3s ease;
+
+  &:focus {
+
+    outline: 0;
+  }
+
+  & i {
+    color: var(--text-color-main);
+  }
+}
+
+.search-widget.active .search-widget__btn {
+
+  transform: translateX(240px)
 }

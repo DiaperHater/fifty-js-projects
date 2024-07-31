@@ -1,0 +1,38 @@
+html {
+
+  --main-color: #292626;
+  --text-color-main: #ded6d6;
+  --text-color-dark: #413d3d;
+
+  * {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+
+body {
+
+  font-family: 'Courier New', Courier, monospace;
+  background-color: var(--main-color);
+  color: var(--text-color-main);
+}
+
+.container {
+
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  width: 100%;
+  column-gap: 24px;
+  padding: 36px;
+}
+
+a {
+
+  font-weight: 600;
+  color: rgb(143 182 204);
+  text-decoration: none;
+}

@@ -1,4 +1,4 @@
-(function () {
+import App from './App.js'
 
-  console.log("My Project Starter");
-})();
+const app = new App()
+app.run()

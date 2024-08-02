@@ -1,0 +1,30 @@
+.sound-board__buttons {
+
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.sound-board__button {
+
+  width: 200px;
+  height: 64px;
+  border: 0;
+  outline: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  background-color: rgb(103 62 153);
+  color: white;
+  cursor: pointer;
+}
+
+.sound-board__button:focus,
+.sound-board__button:hover {
+
+  border-color: white;
+}

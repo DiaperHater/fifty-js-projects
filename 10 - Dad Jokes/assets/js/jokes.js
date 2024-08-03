@@ -4,18 +4,19 @@ export default async function runJokes() {
   const jokeBody = document.querySelector('.jokes__body')
 
 
-  button.addEventListener('click', buttonClickHandler)
+  button.addEventListener('click', generateJoke)
 
 
-  async function buttonClickHandler() {
+  async function generateJoke() {
 
     try {
 
-      const response = await fetch('https://icanhazdadjoke.com/', {
+      const config = {
         headers: {
           "Accept": "application/json"
         }
-      })
+      }
+      const response = await fetch('https://icanhazdadjoke.com/', config)
       const json = await response.json()
       jokeBody.innerText = json.joke
     } catch (e) {

@@ -1,0 +1,25 @@
+.keycode {
+  --keycode-text-color: #413d3d;
+  --keycode-bg-color: #f1f1f1;
+
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 48px 32px;
+  border: 1px solid var(--keycode-text-color);
+  border-radius: 4px;
+  background-color: var(--keycode-bg-color);
+  width: 640px;
+  max-width: 100%;
+}
+
+.keycode__intro-msg {
+
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.keycode__container {
+
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+}

@@ -1,4 +1,14 @@
-import App from './App.js'
+(function () {
+  "use strict";
 
-const app = new App()
-app.run()
+  if (typeof document === undefined) {
+    // Not on a browser
+    return
+  }
+
+  document.addEventListener("DOMContentLoaded", init)
+
+  function init() {
+    console.log("Starter js is OK!");
+  }
+})()

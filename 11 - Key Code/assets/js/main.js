@@ -10,12 +10,14 @@
   function init() {
 
     window.addEventListener("keypress", event => updateView(event.key, event.code))
+
     createNewBlock("event.key", "")
     createNewBlock("event.code", "")
   }
 
   function updateView(key, code) {
     const blocksContainer = document.querySelector(".keycode__container")
+
     blocksContainer.innerHTML = ""
 
     createNewBlock("event.key", key)
@@ -25,7 +27,9 @@
   function createNewBlock(name, value) {
     const blocksContainer = document.querySelector(".keycode__container")
     const block = document.createElement("div")
+
     blocksContainer.appendChild(block)
+
     block.outerHTML = `
       <div class="keycode__block block-keycode">
         <div class="block-keycode__name">${name}</div>

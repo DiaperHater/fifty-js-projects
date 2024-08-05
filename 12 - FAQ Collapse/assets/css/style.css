@@ -1,0 +1,36 @@
+html {
+
+  --main-color: #292626;
+  --text-color-main: #ded6d6;
+  --text-color-dark: #413d3d;
+
+  * {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+
+body {
+
+  background-color: var(--main-color);
+  color: var(--text-color-main);
+}
+
+.container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  column-gap: 24px;
+  padding: 36px;
+  padding-top: 200px;
+}
+
+.page-title {
+
+  margin-bottom: 42px;
+}

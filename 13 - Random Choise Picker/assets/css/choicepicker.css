@@ -1,0 +1,51 @@
+.choicepicker {
+
+  width: 600px;
+  max-width: 100%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.choicepicker__title {
+
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.choicepicker__input {
+
+  display: block;
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 24px;
+  outline: none;
+  resize: none;
+  border: none;
+  border-radius: 4px;
+}
+
+.choicepicker__results {
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.choicepicker__result-item {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 18px;
+  background-color: #f68709;
+  color: #f0e9f0;
+  transition: .1s linear;
+}
+
+.choicepicker__result-item._active {
+
+  background-color: #f6ede3;
+  color: #232323;
+}

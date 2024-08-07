@@ -1,0 +1,33 @@
+html {
+
+  --main-color: #292626;
+  --text-color-main: #ded6d6;
+  --text-color-dark: #413d3d;
+
+  * {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+
+body {
+
+  color: var(--text-color-main);
+}
+
+.container {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  height: 100vh;
+  width: 100%;
+  column-gap: 24px;
+  padding: 36px;
+  background: linear-gradient(to bottom, hsl(193, 100%, 95%) 0% 50%, hsl(216, 93%, 64%) 50% 100%);
+}

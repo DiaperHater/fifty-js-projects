@@ -20,12 +20,14 @@
   position: relative;
   width: 0px;
   opacity: 0;
+  visibility: hidden;
   transition: 1s linear;
   margin-right: 0;
 }
 
 .nav._active .nav__links-box {
   opacity: 1;
+  visibility: visible;
   margin-right: 24px;
 }
 

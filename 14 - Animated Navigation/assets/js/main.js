@@ -8,8 +8,6 @@
 
   document.addEventListener("DOMContentLoaded", init)
 
-  const linksBox = document.querySelector(".nav__links-box")
-  // linksBox.style.width = 0
   function init() {
     const toggle = document.querySelector(".nav__toggle")
     toggle.addEventListener("click", toggleNav)
@@ -17,11 +15,16 @@
 
   function toggleNav() {
     const nav = document.querySelector(".nav")
-    const links = document.querySelector(".nav__links")
-    const linksBox = document.querySelector(".nav__links-box")
-
     nav.classList.toggle("_active")
 
-    nav.classList.contains("_active") ? linksBox.style.width = links.clientWidth + "px" : linksBox.style.width = "0px"
+    // Update nav
+    const linksBox = document.querySelector(".nav__links-box")
+    const isNavActive = nav.classList.contains("_active")
+    if (isNavActive) {
+      const links = document.querySelector(".nav__links")
+      linksBox.style.width = `${links.clientWidth}px`
+    } else {
+      linksBox.style.width = "0px"
+    }
   }
 })()

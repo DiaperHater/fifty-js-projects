@@ -1,0 +1,60 @@
+html {
+
+  --main-color: hsl(285, 40%, 40%);
+  --text-color-main: #ded6d6;
+  --text-color-dark: #413d3d;
+
+  * {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+}
+
+
+body {
+
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: var(--main-color);
+  color: var(--text-color-main);
+}
+
+.container {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  height: 100vh;
+  width: 100%;
+  column-gap: 24px;
+  padding: 36px;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    flex-direction: column;
+    row-gap: 40px;
+  }
+}
+
+/* Counter Item */
+.counter {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.counter__icon {
+  font-size: 40px;
+}
+
+.counter__value {
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}

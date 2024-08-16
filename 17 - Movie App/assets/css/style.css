@@ -1,0 +1,140 @@
+:root {
+
+  --main-color: #292626;
+  --text-color-main: #ded6d6;
+  --text-color-dark: #413d3d;
+  --bg-color: hsl(240 50% 50%);
+}
+
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--main-color);
+  color: var(--text-color-main);
+}
+
+img {
+
+  width: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+main {
+
+  background: var(--bg-color);
+}
+
+.container {
+
+  width: 100%;
+  max-width: 986px;
+  padding: 64px 32px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.app {
+
+  --app-bg-color: hsl(232, 34%, 21%);
+}
+
+.app__search-container {
+
+  display: flex;
+  justify-content: flex-end;
+  padding: 16px 0;
+}
+
+.app__search {
+
+  padding: 5px 8px;
+  border-radius: 50px;
+  border: 0;
+  box-shadow: 0 0 0px 2px hsla(240, 50%, 80%, .2);
+}
+
+.app__search:focus,
+.app__search:hover {
+
+  outline: 0;
+  box-shadow: 0 0 0px 2px hsla(240, 50%, 80%, .8);
+}
+
+.app__cards-container {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  background-color: var(--app-bg-color);
+  padding: 50px 32px;
+}
+
+.card {
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: hsla(240, 50%, 80%, .2);
+  padding: 20px;
+  overflow: hidden;
+}
+
+.card__image {
+
+  aspect-ratio: 1/1;
+  margin-bottom: 24px;
+}
+
+.card__title {
+
+  margin-bottom: 18px;
+}
+
+.card__raiting {
+
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  padding: 4px;
+  background-color: hsl(220, 30%, 20%);
+}
+
+.card__raiting._good {
+
+  color: hsl(150, 50%, 60%);
+}
+
+.card__raiting._bad {
+
+  color: hsl(0, 50%, 40%);
+}
+
+.card__description {
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  color: hsl(232, 34%, 21%);
+  background-color: hsl(200 90% 90%);
+  padding: 20px;
+  translate: 0% 101%;
+  transition: .2s all linear;
+  z-index: 2;
+  cursor: default;
+}
+
+.card:hover .card__description {
+
+  translate: 0 0;
+}

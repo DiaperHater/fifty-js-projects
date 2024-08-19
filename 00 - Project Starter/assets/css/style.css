@@ -19,6 +19,15 @@ body {
   color: var(--text-color-main);
 }
 
+img {
+
+  display: block;
+  width: 100%;
+  height: auto;
+  object-position: center;
+  object-fit: cover;
+}
+
 .container {
 
   display: flex;

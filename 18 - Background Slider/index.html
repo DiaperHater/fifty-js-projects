@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- fa icons -->
+  <link href="./assets/fontawesome/css/all.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <title>Background Slider</title>
+</head>
+
+<body>
+  <main>
+    <div class="app">
+      <img src="./assets/images/pic1.png" alt="alttext" class="app__bg"></img>
+      <div class="app__bg-overlay"></div>
+      <div class="app__slider-container">
+        <div class="app__slide _active">
+          <img src="./assets/images/pic1.png" alt="alttext" class="app__slide-img">
+        </div>
+        <div class="app__slide">
+          <img src="./assets/images/pic2.png" alt="alttext" class="app__slide-img">
+        </div>
+        <div class="app__slide">
+          <img src="./assets/images/pic3.png" alt="alttext" class="app__slide-img">
+        </div>
+      </div>
+      <div class="app__button-container">
+        <button class="app__button _prev"><i class="app__button-icon fas fa-arrow-left"></i></button>
+        <button class="app__button _next"><i class="app__button-icon fas fa-arrow-right"></i></button>
+      </div>
+    </div>
+  </main>
+</body>
+
+<script type="module" src="./assets/js/main.js"></script>
+
+</html>
